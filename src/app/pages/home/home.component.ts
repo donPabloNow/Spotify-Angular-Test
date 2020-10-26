@@ -1,19 +1,18 @@
-import {Component, OnInit} from '@angular/core';
-import {Select} from "@ngxs/store";
-import {Observable} from "rxjs";
-import {Spotify} from "../../state/spotify";
-import {ArtistResponse} from "../../state/interfaces";
+import { Component, OnInit } from '@angular/core';
+import { Select } from '@ngxs/store';
+import { Observable } from 'rxjs';
+import { SpotifyState } from '../../state/state';
+import { ArtistResponse } from '../../service/interfaces';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
 })
 export class HomeComponent implements OnInit {
-  @Select(Spotify.results) artists$: Observable<ArtistResponse[]>;
+  @Select(SpotifyState.results) artists$: Observable<ArtistResponse[]>;
 
-  constructor() {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

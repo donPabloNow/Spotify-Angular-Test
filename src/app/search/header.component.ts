@@ -13,14 +13,14 @@ import {
   tap,
 } from 'rxjs/operators';
 import { Store } from '@ngxs/store';
-import { Search } from '../state/actions';
-import { SearchRequest } from '../service/interfaces';
+import { Search } from '../../app-state/spotify/spotify.actions';
+import { SearchRequest } from '../service/spotify/interfaces/search/search-spotify.request';
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
+  selector: 'app-header',
+  templateUrl: './header.component.html',
 })
-export class SearchComponent implements AfterViewInit {
+export class HeaderComponent implements AfterViewInit {
   public query: string;
 
   @ViewChild('appSearch') appSearch: ElementRef;
