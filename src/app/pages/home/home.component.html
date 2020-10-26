@@ -1,1 +1,9 @@
-<p>coming soon</p>
+<mat-selection-list [multiple]="false" class="app-list">
+  <mat-list-option *ngFor="let artist of artists$ | async" [value]="artist.id">
+    <span>{{ artist.name }}</span>
+    <img
+      [alt]="artist.name"
+      [src]="artist.images || '../assets/placeholder.png'"
+    />
+  </mat-list-option>
+</mat-selection-list>
