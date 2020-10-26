@@ -1,0 +1,20 @@
+.app-list {
+  &__image {
+    max-width: 3em;
+    max-height: 3em;
+  }
+}
+
+.mat-selection-list{
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  background: $spotify-black;
+  .mat-list-option{
+    color: $spotify-white;
+  }
+  .mat-list-item-content{
+    margin:10px;
+    padding:10px;
+  }
+}

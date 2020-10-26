@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Select, Store } from '@ngxs/store';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { SpotifyState } from './state/state';
 import { AuthorizeSpotify } from './state/actions';
+import { SpotifyState } from './state/state';
 
 @Component({
   selector: 'app-root',

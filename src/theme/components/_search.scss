@@ -1,0 +1,18 @@
+@import "../variables/colors";
+@import "../variables/palette";
+@import "../variables/sizes";
+
+.app-search {
+  width: 100%;
+    input {
+      width: 100%;
+      padding: $standard-padding * 2;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+      box-sizing: border-box;         /* Opera/IE 8+ */
+      font-size: 1.25em;
+      border: $standard-border solid $spotify-angular-test-tufts-blue;
+      border-radius: $standard-padding;
+      color: $spotify-angular-test-black-coffee;
+  }
+}

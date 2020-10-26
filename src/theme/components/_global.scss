@@ -1,0 +1,25 @@
+@import "../variables/colors";
+@import "../variables/sizes";
+*{outline: none;}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  background: $spotify-black;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  background-image: url('https://loading.io/mod/background/speedline/index.svg');
+}
+
+h1{
+  font-family: $headline-font-family;
+  font-size: $headline-font-size;
+  line-height: $headline-line-height;
+}
