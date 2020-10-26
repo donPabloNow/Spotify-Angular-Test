@@ -13,8 +13,8 @@ import {
   tap,
 } from 'rxjs/operators';
 import { Store } from '@ngxs/store';
-import { Search } from '../../state/spotify';
-import { SearchRequest } from '../../state/interfaces';
+import { Search } from '../state/spotify';
+import { SearchRequest } from '../state/interfaces';
 
 @Component({
   selector: 'app-search',

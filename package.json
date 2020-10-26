@@ -25,6 +25,7 @@
     "@ngxs/logger-plugin": "^3.7.0",
     "@ngxs/router-plugin": "^3.7.0",
     "@ngxs/store": "^3.7.0",
+    "dotenv": "^8.2.0",
     "material": "^0.4.3",
     "normalize.css": "^8.0.1",
     "purecss": "^2.0.3",
